@@ -131,7 +131,7 @@ const ProfileSettings = () => {
   }, []);
 
   const handleSetStreamKey = async (inputValue) => {
-    console.log('Setting Up Stream Key');
+    console.log('Setting Up Stream Key', inputValue);
     const { error } = await supabase
       .from('sens_metadata_postgres')
       .update({ stream_key: inputValue })
