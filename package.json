@@ -2,21 +2,42 @@
   "name": "floxio-ytstream",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "node server.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@radix-ui/react-form": "^0.0.3",
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.6",
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/supabase-js": "^2.43.4",
+    "dotenv": "^16.4.5",
+    "ffmpeg": "^0.0.4",
+    "framer-motion": "^11.2.9",
+    "gsap": "^3.12.5",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.4.0",
+    "next": "14.2.3",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-intersection-observer": "^9.10.2",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "winston": "^3.13.0"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "daisyui": "^4.11.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }

@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        blackalpha: 'rgba(0, 0, 0, 0.5)', // Adjust opacity as needed
+        'blackalpha-hover': 'rgba(0, 0, 0, 0.6)', // Hover state color
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -14,5 +18,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };

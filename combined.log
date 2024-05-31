@@ -1,0 +1,118 @@
+{"level":"info","message":"> Ready on http://bee4101202b9:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n  libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: pipe:: Immediate exit requested\nExiting normally, received signal 2.\n","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"ffmpeg process exited with code 1","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n  libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: pipe:: Immediate exit requested\nExiting normally, received signal 2.\n","service":"user-service"}
+{"level":"info","message":"ffmpeg process exited with code 1","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n  libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: pipe:: Immediate exit requested\nExiting normally, received signal 2.\n","service":"user-service"}
+{"level":"info","message":"ffmpeg process exited with code 1","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n  libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: pipe:: Immediate exit requested\nExiting normally, received signal 2.\n","service":"user-service"}
+{"level":"info","message":"ffmpeg process exited with code 1","service":"user-service"}
+{"level":"info","message":"> Ready on http://bee4101202b9:3000","service":"user-service"}
+{"level":"info","message":"> Ready on http://bee4101202b9:3000","service":"user-service"}
+{"level":"info","message":"> Ready on http://bee4101202b9:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr:   libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: pipe:: Immediate exit requested\nExiting normally, received signal 2.\n","service":"user-service"}
+{"level":"info","message":"ffmpeg process exited with code 1","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr:   libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: pipe:: Immediate exit requested\nExiting normally, received signal 2.\n","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"ffmpeg process exited with code 1","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr:   libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers\n  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)\n  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared\n","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr:   libavutil      56. 31.100 / 56. 31.100\n  libavcodec     58. 54.100 / 58. 54.100\n  libavformat    58. 29.100 / 58. 29.100\n  libavdevice    58.  8.100 / 58.  8.100\n  libavfilter     7. 57.100 /  7. 57.100\n  libavresample   4.  0.  0 /  4.  0.  0\n  libswscale      5.  5.100 /  5.  5.100\n  libswresample   3.  5.100 /  3.  5.100\n  libpostproc    55.  5.100 / 55.  5.100\n","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"error","message":"ffmpeg stderr: pipe:: Immediate exit requested\nExiting normally, received signal 2.\n","service":"user-service"}
+{"level":"info","message":"ffmpeg process exited with code 1","service":"user-service"}
+{"level":"info","message":"> Ready on http://bee4101202b9:3000","service":"user-service"}
+{"level":"info","message":"> Ready on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"> Ready on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
