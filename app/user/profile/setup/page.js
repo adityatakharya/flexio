@@ -1,77 +1,60 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from "next/navigation";
-import { supabase } from "../../../utils/supabaseClient";
+import { supabase } from '../../../utils/supabaseClient';
 
-
-
-const UserDataBoxes = ({ name, email, username }) => {
-    
-  document.title = "Profile Settings"
- 
-  return (
-    <>
-      <div className="flex flex-col items-start mb-6 w-full max-w-xs sm:max-w-md">
-        <div className="flex items-center w-full">
-          <input
-            type="text"
-            className="input input-bordered flex-grow mb-2"
-            placeholder={name || 'User'}
-            disabled
-          />
-          <button
-            className="btn btn-primary ml-2 mb-2"
-            disabled={true}
-          >
-            Can't Change
-          </button>
-        </div>
-        <small className="text-gray-500">Appears on your profile.</small>
+const UserDataBoxes = ({ name, email, username }) => (
+  <>
+    <div className="flex flex-col items-start mb-6 w-full max-w-xs sm:max-w-md">
+      <div className="flex items-center w-full">
+        <input
+          type="text"
+          className="input input-bordered flex-grow mb-2"
+          placeholder={name || 'User'}
+          disabled
+        />
+        <button className="btn btn-primary ml-2 mb-2" disabled>
+          Can&apos;t Change
+        </button>
       </div>
-      <div className="flex flex-col items-start mb-6 w-full max-w-xs sm:max-w-md">
-        <div className="flex items-center w-full">
-          <input
-            type="text"
-            className="input input-bordered flex-grow mb-2"
-            placeholder={email || 'User'}
-            disabled
-          />
-          <button
-            className="btn btn-primary ml-2 mb-2"
-            disabled={true}
-          >
-            Can't Change
-          </button>
-        </div>
-        <small className="text-gray-500">Visible only to you.</small>
+      <small className="text-gray-500">Appears on your profile.</small>
+    </div>
+    <div className="flex flex-col items-start mb-6 w-full max-w-xs sm:max-w-md">
+      <div className="flex items-center w-full">
+        <input
+          type="text"
+          className="input input-bordered flex-grow mb-2"
+          placeholder={email || 'User'}
+          disabled
+        />
+        <button className="btn btn-primary ml-2 mb-2" disabled>
+          Can&apos;t Change
+        </button>
       </div>
-      <div className="flex flex-col items-start mb-6 w-full max-w-xs sm:max-w-md">
-        <div className="flex items-center w-full">
-          <input
-            type="text"
-            className="input input-bordered flex-grow mb-2"
-            placeholder={username || 'User'}
-            disabled
-          />
-          <button
-            className="btn btn-primary ml-2 mb-2"
-            disabled={true}
-          >
-            Can't Change
-          </button>
-        </div>
-        <small className="text-gray-500">Visible only to you.</small>
+      <small className="text-gray-500">Visible only to you.</small>
+    </div>
+    <div className="flex flex-col items-start mb-6 w-full max-w-xs sm:max-w-md">
+      <div className="flex items-center w-full">
+        <input
+          type="text"
+          className="input input-bordered flex-grow mb-2"
+          placeholder={username || 'User'}
+          disabled
+        />
+        <button className="btn btn-primary ml-2 mb-2" disabled>
+          Can&apos;t Change
+        </button>
       </div>
-    </>
-  );
-};
+      <small className="text-gray-500">Visible only to you.</small>
+    </div>
+  </>
+);
 
 const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) => {
-  const [inputValue, setInputValue] = {existingValue}? useState(("Secured")) : useState("");
-  const [isDisabled, setIsDisabled] = {existingValue}? useState(true) : useState(false);
-  const [buttonText, setButtonText] = {existingValue}? useState('Key Set') : useState('Set Key');
-  const [isEditVisible, setIsEditVisible] = {existingValue}? useState(true) : useState(false);
+  const [inputValue, setInputValue] = useState(existingValue ? 'Secured' : '');
+  const [isDisabled, setIsDisabled] = useState(existingValue ? true : false);
+  const [buttonText, setButtonText] = useState(existingValue ? 'Key Set' : 'Set Key');
+  const [isEditVisible, setIsEditVisible] = useState(existingValue ? true : false);
 
   const handleClick = async () => {
     await onClickFunction(inputValue);
@@ -82,7 +65,7 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
 
   const handleEditClick = () => {
     setIsDisabled(false);
-    setInputValue((existingValue) || (inputValue !== "Secured" ? inputValue : ""))
+    setInputValue(existingValue || (inputValue !== 'Secured' ? inputValue : ''));
     setButtonText('Set Key');
     setIsEditVisible(false);
   };
@@ -120,7 +103,6 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
 };
 
 const ProfileSettings = () => {
-  const router = useRouter();
   const [userOAuth, setUserOAuth] = useState(null);
   const [userPostgres, setUserPostgres] = useState(null);
 
@@ -128,64 +110,58 @@ const ProfileSettings = () => {
     const checkIfUserIsLoggedIn = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
-        router.push('/user/signup');
+        window.location.href = '/user/signup'; // Redirect via the browser
       } else {
-        console.log(user);
         setUserOAuth(user);
-        console.log("Checking for user in user_data_postgres...")
-          const { data, error } = await supabase
-            .from('sens_metadata_postgres')
-            .select('*')
-            .eq('email', user?.user_metadata.email)
-            .single();
-      
-          if (error && error.details !== "The result contains 0 rows") {
-            console.error('Error checking user in Postgres:', error);
-          }
-          else{
-            if(data){
-                setUserPostgres(data);
-                console.log("Checked for user in user_data_postgres successfully", data);
-            }
+        const { data, error } = await supabase
+          .from('sens_metadata_postgres')
+          .select('*')
+          .eq('email', user?.user_metadata.email)
+          .single();
+
+        if (error) {
+          console.error('Error checking user in Postgres:', error);
+        } else {
+          setUserPostgres(data);
         }
       }
     };
 
     checkIfUserIsLoggedIn();
-  }, [router]);
+  }, []);
 
   const handleSetStreamKey = async (inputValue) => {
-    console.log("Setting Up Stream Key");
+    console.log('Setting Up Stream Key');
     const { error } = await supabase
       .from('sens_metadata_postgres')
-      .update({stream_key: inputValue})
+      .update({ stream_key: inputValue })
       .eq('email', userOAuth?.user_metadata?.email);
     if (error) {
-      console.log("Error in setting up Stream Key:", error);
+      console.log('Error in setting up Stream Key:', error);
     } else {
-      console.log("Successfully updated Stream Key");
+      console.log('Successfully updated Stream Key');
     }
   };
 
   const handleSetStreamURL = async (inputValue) => {
-    console.log("Setting Up Stream URL");
+    console.log('Setting Up Stream URL');
     const { error } = await supabase
       .from('sens_metadata_postgres')
-      .update({stream_url: inputValue})
+      .update({ stream_url: inputValue })
       .eq('email', userOAuth?.user_metadata?.email);
     if (error) {
-      console.log("Error in setting up Stream URL:", error);
+      console.log('Error in setting up Stream URL:', error);
     } else {
-      console.log("Successfully updated Stream URL");
+      console.log('Successfully updated Stream URL');
     }
+  };
+
+  const signOut = async () => {
+    await supabase.auth.signOut();
   };
 
   if (!userOAuth) {
     return <div className="min-h-screen bg-black flex items-center justify-center text-white">Loading...</div>;
-  }
-
-  const signOut = async () => {
-    const { error } = await supabase.auth.signOut();
   }
 
   return (
@@ -193,7 +169,11 @@ const ProfileSettings = () => {
       <h1 className="text-4xl font-mono text-white text-center mt-10 mb-10">Profile Settings</h1>
       <hr className="w-64 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
       <div className="min-h-screen bg-black flex flex-col items-center mt-20 px-10">
-        <UserDataBoxes name={userOAuth.user_metadata?.full_name} email={userOAuth.user_metadata?.email} username={userOAuth.user_metadata?.preferred_username || "Not Available"} />
+        <UserDataBoxes
+          name={userOAuth.user_metadata?.full_name}
+          email={userOAuth.user_metadata?.email}
+          username={userOAuth.user_metadata?.preferred_username || 'Not Available'}
+        />
         <SecretKeyInput
           label="Enter your Stream Key"
           description="This key will be used for streaming."
@@ -207,18 +187,15 @@ const ProfileSettings = () => {
           existingValue={userPostgres?.stream_url}
         />
         <div className="text-center mt-6">
-              <a href="/user/login" className="hover:bg-red-600">
-              <button
-                type="submit"
-                className="bg-gray-900 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                onClick={signOut}
-              >
-                Sign Out
-              </button>
-              </a>
-            </div>
+          <button
+            type="button"
+            className="bg-gray-900 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            onClick={signOut}
+          >
+            Sign Out
+          </button>
+        </div>
       </div>
-      
     </>
   );
 };
