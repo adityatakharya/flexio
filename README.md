@@ -63,8 +63,8 @@ After completing all the steps, your app will start running as soon as the docke
 
 - Created a Docker container to streamline deployment. (FFmpeg should be installed on the machine to work properly and that's why, docker was the right option)
 - Imported spawn for child_process in Node.js.
-- Configured a Docker container with Ubuntu, CURL, Node.js, and FFmpeg for video processing. Refer to [Dockerfile](https://github.com/adityatakharya/flexio/blob/main/Dockerfile ) for more.
-- Defined the ports. Refer [docker-compose](https://github.com/adityatakharya/flexio/blob/main/docker-compose.yml) for more.
+- Configured a Docker container with Ubuntu, CURL, Node.js, and FFmpeg for video processing. (Refer to [Dockerfile](https://github.com/adityatakharya/flexio/blob/main/Dockerfile ) for more.)
+- Defined the ports. (Refer to [docker-compose](https://github.com/adityatakharya/flexio/blob/main/docker-compose.yml) for more.)
 - Ran the server using docker-compose up
 
 ### Step 5: Implementing User Authentication
@@ -78,7 +78,7 @@ After completing all the steps, your app will start running as soon as the docke
 
 - Utilized Postgres SQL from Supabase for storing user and streaming credentials.
 - Created tables for user details and streaming credentials with foreign key relationships.
-- Populated data in the tables from the main homepage. Refer to [/app/page.js](https://github.com/adityatakharya/flexio/blob/main/app/page.js) for more.
+- Populated data in the tables from the main homepage. (Refer to [/app/page.js](https://github.com/adityatakharya/flexio/blob/main/app/page.js) for more.)
 
 ### Step 7: Enhancing User Interface
 
