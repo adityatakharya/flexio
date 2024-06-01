@@ -75,7 +75,7 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
       <div className="flex items-center w-full">
         <input
           type="text"
-          className="input input-bordered flex-grow mb-2"
+          className="input input-bordered flex-grow mb-2 text-white"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           disabled={isDisabled}
@@ -169,13 +169,14 @@ const ProfileSettings = () => {
 
   return (
     <>
+    <div className="bg-black">
       { successNoti && (
         <div role="alert" class="alert alert-success">
         <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
         <span>Changes Saved! <u><a href="/user/profile/setup" onClick={(e) => {setSuccessNoti(false)}}>Refresh</a></u> to update.</span>
       </div>
       )}
-      <h1 className="text-4xl font-mono text-white text-center mt-10 mb-10">Profile Settings</h1>
+      <h1 className="text-4xl font-mono text-white text-center pt-10 mb-10">Profile Settings</h1>
       <hr className="w-64 h-1 mx-auto my-4 border-0 rounded md:my-10 bg-gray-700" />
       <div className="min-h-screen bg-black flex flex-col items-center mt-20 px-10">
         <UserDataBoxes
@@ -196,6 +197,7 @@ const ProfileSettings = () => {
           existingValue={userPostgres?.stream_url}
         />
         <div className="text-center mt-6">
+          <a href="/user/login">
           <button
             type="button"
             className="bg-gray-900 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -203,7 +205,9 @@ const ProfileSettings = () => {
           >
             Sign Out
           </button>
+          </a>
         </div>
+      </div>
       </div>
     </>
   );

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={`${inter.className}`}>
-      <div className="">
+      <div className="bg-black">
       <div className="navbar bg-black text-white">
         <div className="navbar-start">
           <div className="dropdown">
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
       <Wrapper>
       {children}
       </Wrapper>
-      <footer className="footer footer-center pt-5 pb-5 bg-gradient-to-r to-gray-800 from-gray-900 text-gray-400 rounded">
+      <footer className="footer footer-center pt-5 pb-5 bg-gradient-to-r to-gray-800 from-gray-900 text-gray-400 rounded-xl">
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">Portfolio</a>
           <a className="link link-hover">Github</a>

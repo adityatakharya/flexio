@@ -174,7 +174,7 @@ export default function Home() {
       <div className="flex justify-center px-3">
         <video className="rounded-lg mb-10" ref={userVideoRef} id="userVideo" autoPlay muted />
       </div>
-      <div className="flex justify-center mb-10">
+      <div className="flex justify-center pb-10">
         
         {streamStarted?
           <button onClick={stopStreaming} type="button" className="border border-gray-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-red-600 text-white border-gray-600 hover:bg-red-700 hover:border-gray-600 focus:ring-gray-700">
