@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a href="/user/profile/setup">Settings</a></li>
               <li><a href="/guide">Guide</a></li>
-              <li><a>About</a></li>
+              <li><a href="https://adityatakharya.github.io/Personal-Portfolio/">About</a></li>
             </ul>
           </div>
         </div>
@@ -52,9 +52,9 @@ export default function RootLayout({ children }) {
       </Wrapper>
       <footer className="footer footer-center pt-5 pb-5 bg-gradient-to-r to-gray-800 from-gray-900 text-gray-400 rounded-xl">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">Portfolio</a>
-          <a className="link link-hover">Github</a>
-          <a className="link link-hover">LinkedIn</a>
+          <a href="https://adityatakharya.github.io/Personal-Portfolio/"  className="link link-hover">Portfolio</a>
+          <a href="https://github.com/adityatakharya/" className="link link-hover">Github</a>
+          <a href="https://www.linkedin.com/in/aditya-takharya/" className="link link-hover">LinkedIn</a>
           <a className="link link-hover">Twitter</a>
         </nav> 
         <nav>
