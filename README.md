@@ -1,4 +1,6 @@
-Welcome to Flexio! This application is a StreamYard clone and allows you to suer easily stream videos in real-time to YouTube from any device.
+# Flexio (StreamYard Clone)
+
+Welcome to Flexio! This application is a StreamYard clone and allows you to super easily stream videos in real-time to YouTube from any device.
 
 ## 🧩 Stack Used
 
@@ -14,7 +16,7 @@ Welcome to Flexio! This application is a StreamYard clone and allows you to suer
 
 Due to heavy data usage and costs, the deployment is not serverless. Therefore, the streaming feature doesn't work in the current deployment. For full functionality, download the Docker image from [here](#).
 
-## Installation Guide
+## 🚀 Installation Guide
 
 1. **Clone the repository**:
    ```
@@ -36,7 +38,7 @@ Due to heavy data usage and costs, the deployment is not serverless. Therefore, 
 
 After completing all the steps, your app will start running as soon as the docker container is ready!
 
-## Short Guide
+## 📜 Code Guide
 
 ### Step 1: Setting Up the Project
 
@@ -59,10 +61,11 @@ After completing all the steps, your app will start running as soon as the docke
 
 ### Step 4: Dockerizing the Application
 
-Created a Docker container to streamline deployment. (FFmpeg should be installed on the machine to work properly and that's why, docker was the right option)
-Imported spawn for child_process in Node.js.
-Configured a Docker container with Ubuntu, CURL, Node.js, and FFmpeg for video processing. Refer to [Dockerfile](#) for more
-Ran the server using docker-compose up
+- Created a Docker container to streamline deployment. (FFmpeg should be installed on the machine to work properly and that's why, docker was the right option)
+- Imported spawn for child_process in Node.js.
+- Configured a Docker container with Ubuntu, CURL, Node.js, and FFmpeg for video processing. Refer to [Dockerfile](https://github.com/adityatakharya/flexio/blob/main/Dockerfile ) for more.
+- Defined the ports. Refer [docker-compose](https://github.com/adityatakharya/flexio/blob/main/docker-compose.yml) for more.
+- Ran the server using docker-compose up
 
 ### Step 5: Implementing User Authentication
 - Explored NextAuth for authentication but encountered issues in importing module.
@@ -75,11 +78,15 @@ Ran the server using docker-compose up
 
 - Utilized Postgres SQL from Supabase for storing user and streaming credentials.
 - Created tables for user details and streaming credentials with foreign key relationships.
-- Populated data in the tables from the main homepage. Refer to [/app/page.js] for more.
+- Populated data in the tables from the main homepage. Refer to [/app/page.js](https://github.com/adityatakharya/flexio/blob/main/app/page.js) for more.
 
 ### Step 7: Enhancing User Interface
 
 - Developed Guide and Settings pages for user instructions and streaming details.
 - Focused on UI/UX improvements for seamless user experience.
 - Ensured smooth transitions between edit buttons and input fields components.
+
+<hr>
+
+Feel free to explore the code and contribute to its development! ❤️
 
