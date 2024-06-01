@@ -22,4 +22,21 @@ module.exports = {
   plugins: [
     require('daisyui'),
   ],
+  theme: {
+    extend: {
+      colors: {
+        base: {
+          100: "#1d232a", // Dark mode base color
+        },
+      },
+    },
+  },
+  // Define the light mode base colors
+  lightTheme: {
+    colors: {
+      base: {
+        100: "#1d232a", // Light mode base color
+      },
+    },
+  },
 };
