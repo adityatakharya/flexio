@@ -55,7 +55,7 @@ const LoginForm = () => {
               </svg>
               <input
                 type="text"
-                className="grow"
+                className="grow bg-gray-700"
                 placeholder="Email"
               />
             </label>

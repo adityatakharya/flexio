@@ -5,7 +5,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'selector',
+  daisyui: {
+    darkTheme: "dark",
+    lightTheme: "dark",
+  },
   theme: {
     extend: {
       colors: {
