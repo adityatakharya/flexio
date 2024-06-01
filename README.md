@@ -2,6 +2,8 @@
 
 Welcome to Flexio! This application is a StreamYard clone and allows you to super easily stream videos in real-time to YouTube from any device.
 
+<br/>
+
 ## 🧩 Stack Used
 
 - **Next.js**: React framework that allows both client-side and server-side rendering.
@@ -12,9 +14,13 @@ Welcome to Flexio! This application is a StreamYard clone and allows you to supe
 - **Supabase**: Authentication with OAuth providers. User and Stream information database.
 - **Docker**: Containerized deployment as required by ffmpeg.
 
+<br/>
+
 ## ⚠️ Important Note
 
 Due to heavy data usage and costs, the deployment is not serverless. Therefore, the streaming feature doesn't work in the current deployment. For full functionality, download the Docker image from [here](#).
+
+<br/>
 
 ## 🚀 Installation Guide
 
@@ -29,7 +35,7 @@ Due to heavy data usage and costs, the deployment is not serverless. Therefore, 
     npm install
 
 3. **Set up environment variables**:
-    Create a .env.local file and add your Supabase and YouTube streaming credentials.
+    Create a ```.env.local file``` and add your Supabase and YouTube streaming credentials.
 
 4. **Build and Run Docker Container**
     ```
@@ -37,6 +43,8 @@ Due to heavy data usage and costs, the deployment is not serverless. Therefore, 
     ```
 
 After completing all the steps, your app will start running as soon as the docker container is ready!
+
+<br/>
 
 ## 📜 Code Guide
 
@@ -86,7 +94,9 @@ After completing all the steps, your app will start running as soon as the docke
 - Focused on UI/UX improvements for seamless user experience.
 - Ensured smooth transitions between edit buttons and input fields components.
 
+<br/>
 <hr>
+
 
 Feel free to explore the code and contribute to its development! ❤️
 
