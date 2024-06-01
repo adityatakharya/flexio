@@ -81,6 +81,7 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
           disabled={isDisabled}
           placeholder={`Enter Your ${label}`}
         />
+        {!isEditVisible && (
         <button
           className="btn btn-primary ml-2 mb-2"
           onClick={handleClick}
@@ -88,13 +89,16 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
         >
           {buttonText}
         </button>
+        )}
         {isEditVisible && (
+          <div className=''>
           <button
             className="btn btn-secondary ml-2 mb-2"
             onClick={handleEditClick}
           >
             Edit
           </button>
+          </div>
         )}
       </div>
       <small className="text-gray-500">{description}</small>
@@ -178,7 +182,7 @@ const ProfileSettings = () => {
       )}
       <h1 className="text-4xl font-mono text-white text-center pt-10 mb-10">Profile Settings</h1>
       <hr className="w-64 h-1 mx-auto my-4 border-0 rounded md:my-10 bg-gray-700" />
-      <div className="min-h-screen bg-black flex flex-col items-center mt-20 px-10">
+      <div className="min-h-screen bg-black flex flex-col items-center mt-20">
         <UserDataBoxes
           name={userOAuth.user_metadata?.full_name}
           email={userOAuth.user_metadata?.email}
