@@ -51,10 +51,10 @@ const UserDataBoxes = ({ name, email, username }) => (
 );
 
 const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) => {
-  const [inputValue, setInputValue] = useState(existingValue ? 'Secured' : '');
-  const [isDisabled, setIsDisabled] = useState(existingValue ? true : false);
+  const [inputValue, setInputValue] = useState(`Secured: ${label}`);
+  const [isDisabled, setIsDisabled] = useState(true);
   const [buttonText, setButtonText] = useState(existingValue ? 'Key Set' : 'Set Key');
-  const [isEditVisible, setIsEditVisible] = useState(existingValue ? true : false);
+  const [isEditVisible, setIsEditVisible] = useState(true);
 
   const handleClick = async () => {
     await onClickFunction(inputValue);
@@ -65,7 +65,7 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
 
   const handleEditClick = () => {
     setIsDisabled(false);
-    setInputValue(existingValue || (inputValue !== 'Secured' ? inputValue : ''));
+    setInputValue(existingValue || (inputValue !== `Secured: ${label}` ? inputValue : ''));
     setButtonText('Set Key');
     setIsEditVisible(false);
   };
@@ -79,7 +79,7 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           disabled={isDisabled}
-          placeholder={label}
+          placeholder={`Enter Your ${label}`}
         />
         <button
           className="btn btn-primary ml-2 mb-2"
@@ -105,6 +105,7 @@ const SecretKeyInput = ({ label, description, onClickFunction, existingValue }) 
 const ProfileSettings = () => {
   const [userOAuth, setUserOAuth] = useState(null);
   const [userPostgres, setUserPostgres] = useState(null);
+  const [successNoti, setSuccessNoti] = useState(false);
 
   useEffect(() => {
     const checkIfUserIsLoggedIn = async () => {
@@ -140,6 +141,7 @@ const ProfileSettings = () => {
       console.log('Error in setting up Stream Key:', error);
     } else {
       console.log('Successfully updated Stream Key');
+      setSuccessNoti(true);
     }
   };
 
@@ -153,6 +155,7 @@ const ProfileSettings = () => {
       console.log('Error in setting up Stream URL:', error);
     } else {
       console.log('Successfully updated Stream URL');
+      setSuccessNoti(true);
     }
   };
 
@@ -166,8 +169,14 @@ const ProfileSettings = () => {
 
   return (
     <>
+      { successNoti && (
+        <div role="alert" class="alert alert-success">
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <span>Changes Saved! <u><a href="/user/profile/setup" onClick={(e) => {setSuccessNoti(false)}}>Refresh</a></u> to update.</span>
+      </div>
+      )}
       <h1 className="text-4xl font-mono text-white text-center mt-10 mb-10">Profile Settings</h1>
-      <hr className="w-64 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+      <hr className="w-64 h-1 mx-auto my-4 border-0 rounded md:my-10 bg-gray-700" />
       <div className="min-h-screen bg-black flex flex-col items-center mt-20 px-10">
         <UserDataBoxes
           name={userOAuth.user_metadata?.full_name}
@@ -175,14 +184,14 @@ const ProfileSettings = () => {
           username={userOAuth.user_metadata?.preferred_username || 'Not Available'}
         />
         <SecretKeyInput
-          label="Enter your Stream Key"
-          description="This key will be used for streaming."
+          label="Stream Key"
+          description="This will be used to access your stream."
           onClickFunction={handleSetStreamKey}
           existingValue={userPostgres?.stream_key}
         />
         <SecretKeyInput
-          label="Enter your Stream URL"
-          description="This key will be used to identify the stream."
+          label="Stream URL"
+          description="This will be used to identify the stream."
           onClickFunction={handleSetStreamURL}
           existingValue={userPostgres?.stream_url}
         />

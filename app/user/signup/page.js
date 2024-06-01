@@ -41,7 +41,7 @@ const LoginForm = () => {
         transition={{ duration: 0.8 }} // Animation duration
     >
     <div className="min-h-screen bg-black flex flex-col justify-center">
-      <h1 class="mb-12 text-xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-4xl text-center justify-center"><span class="text-transparent md:text-3xl lg:text-4xl text-xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-center justify-center">Flexio | </span>Stream from  <span class="underline underline-offset-4 decoration-3 decoration-blue-400 dark:decoration-blue-600">Anywhere</span></h1>
+      <h1 class="mb-12 text-xl font-extrabold text-white md:text-3xl lg:text-4xl text-center justify-center"><span class="text-transparent md:text-3xl lg:text-4xl text-xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-center justify-center">Flexio | </span>Stream from  <span class="underline underline-offset-4 decoration-3 decoration-blue-600">Anywhere</span></h1>
       <div className="mx-auto w-72 sm:w-96 sm:w-96 md:w-96 lg:w-96 text-center">
         <div className="bg-base-100 py-8 px-4 shadow rounded-xl px-10">
         <h2 className="text-center text-l sm:text-2xl font-extrabold text-white mb-10">Enter your details</h2>
