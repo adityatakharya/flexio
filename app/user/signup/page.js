@@ -2,13 +2,16 @@
 
 import { signInWithGithub, signInWithGoogle } from "../../utils/supabaseProviders";
 import { useRouter } from "next/navigation";
-import { useEffect} from "react"
+import { useState, useEffect} from "react"
 import { supabase } from "../../utils/supabaseClient";
 import { motion } from "framer-motion";
 
 const LoginForm = () => {
 
     const router = useRouter();
+    const [successNoti, setSuccessNoti] = useState(false);
+    const [errorNoti, setErrorNoti] = useState(false);
+    const [errorText, setErrorText] = useState("");
   
     useEffect(() => {
       document.title = "Flexio | Sign Up"
@@ -30,8 +33,20 @@ const LoginForm = () => {
         await signInWithGoogle();
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault(); 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const { data, error } = await supabase.auth.signUp({
+          email: formData.get("email"),
+          password: formData.get("password"),
+          options: {
+            emailRedirectTo: 'https://flexio-aditya.vercel.app/user/login',
+          },
+        })
+
+        if(error) {setErrorText(error.message); setErrorNoti(true);}
+        else {setSuccessNoti(true);}
+
     };
 
   return (
@@ -40,14 +55,32 @@ const LoginForm = () => {
         animate={{opacity: 1}} // Use animation controls
         transition={{ duration: 0.8 }} // Animation duration
     >
+      <div className="toast toast-top toast-end toast-conatiner mt-16 flex">
+        {successNoti && <div className="alert alert-success flex">
+          <span>Check email for confirmation.</span>
+          <button type="button" onClick={(e) => {setSuccessNoti(false)}} className="flex text-right ms-auto hover:bg-gray-900 rounded-lg p-0.5 inline-flex items-center justify-center h-8 w-8 dark:text-gray-900 dark:hover:text-gray-700 dark:hover:bg-gray-900" aria-label="Close">
+            <span className="sr-only">Close</span>
+            <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="tomato" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+          </button>
+        </div>}
+        {errorNoti && <div className="alert alert-info flex">
+          <span>{errorText}</span>
+          <button type="button" onClick={(e) => {setErrorNoti(false)}} className="flex text-right ms-auto hover:bg-gray-900 rounded-lg p-0.5 inline-flex items-center justify-center h-8 w-8 dark:text-gray-900 dark:hover:text-gray-700 dark:hover:bg-gray-900" aria-label="Close">
+            <span className="sr-only">Close</span>
+            <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="tomato" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+          </button>
+        </div>}
+      </div>
     <div className="min-h-screen bg-black flex flex-col justify-center">
       <h1 class="mb-12 text-xl font-extrabold text-white md:text-3xl lg:text-4xl text-center justify-center"><span class="text-transparent md:text-3xl lg:text-4xl text-xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-center justify-center">Flexio | </span>Stream from  <span class="underline underline-offset-4 decoration-3 decoration-blue-600">Anywhere</span></h1>
       <div className="mx-auto w-72 sm:w-96 sm:w-96 md:w-96 lg:w-96 text-center">
         <div className="bg-base-100 py-8 px-4 shadow rounded-xl px-10">
         <h2 className="text-center text-l sm:text-2xl font-extrabold text-white mb-10">Enter your details</h2>
           <form className="space-y-8" onSubmit={handleSubmit}>
-
-            {/* Email */}
             <label className="input input-bordered flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#bcbdbf" className="w-4 h-4 opacity-70">
                 <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
@@ -55,6 +88,7 @@ const LoginForm = () => {
               </svg>
               <input
                 type="text"
+                name="email"
                 className="grow"
                 placeholder="Email"
               />
@@ -67,6 +101,7 @@ const LoginForm = () => {
               </svg>
               <input
                 type="password"
+                name="password"
                 className="grow"
                 placeholder="Password"
               />

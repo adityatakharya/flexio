@@ -115,7 +115,7 @@ const ProfileSettings = () => {
     const checkIfUserIsLoggedIn = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
-        window.location.href = '/user/signup'; // Redirect via the browser
+        window.location.href = '/user/login'; // Redirect via the browser
       } else {
         setUserOAuth(user);
         const { data, error } = await supabase

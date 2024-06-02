@@ -24,7 +24,7 @@ export default function Home() {
     const checkIfUserIsLoggedIn = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
-        router.push('/user/signup');
+        router.push('/user/login');
       }
       setUser(user);
 
@@ -166,7 +166,7 @@ export default function Home() {
       )}
       <div className="flex justify-center text-center">
         {User ? (
-          <h1 className="text-3xl font-bold justify-center text-center mb-10 mt-5 text-gray-300">Welcome, <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 from-sky-500">{User.user_metadata.full_name.split(' ')[0]}</span>!</h1>
+          <h1 className="text-3xl font-bold justify-center text-center mb-10 mt-5 text-gray-300">Welcome, <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 from-sky-500">{User.user_metadata?.full_name?.split(' ')[0] || User.user_metadata?.email?.split("@")[0]}</span>!</h1>
         ) : (
           <progress className="progress w-56"></progress>
         )}
