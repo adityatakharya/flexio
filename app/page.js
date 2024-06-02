@@ -161,7 +161,7 @@ export default function Home() {
       { streamStartedNoti && (
         <div role="alert" class="alert alert-success">
         <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-        <span>Stream Started! Will start reflecting on your Youtube Dasboard soon. (Feature not working because of heavy storage use and non severless deployment)  </span><u><a href="#" onClick={(e) => {setStreamStartedNoti(false)}} className="text-right">close</a></u>
+        <span>Stream Started! (Feature not working because of heavy storage use and non severless deployment. To install on your local machine, view <u><a href="https://github.com/adityatakharya/flexio">source code</a></u>.)  </span><u><a href="#" onClick={(e) => {setStreamStartedNoti(false)}} className="text-right">close</a></u>
       </div>
       )}
       <div className="flex justify-center text-center">
