@@ -6475,3 +6475,11 @@
 {"level":"info","message":"Binary Stream Incoming","service":"user-service"}
 {"level":"info","message":"Binary Stream Incoming","service":"user-service"}
 {"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"> Ready on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"> Ready on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}

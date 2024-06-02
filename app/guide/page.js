@@ -4,9 +4,11 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
 const Timeline = () => {
+
   useEffect(() => {
     document.title = "Flexio | Guide";
   }, []);
+
   return (
     <motion.div
       className="bg-black p-4 min-h-screen justify-center flex"
