@@ -18,7 +18,7 @@ Welcome to Flexio! This application is a StreamYard clone and allows you to supe
 
 ## ⚠️ Important Note
 
-Due to heavy data usage and costs, the deployment is not serverless. Therefore, the streaming feature doesn't work in the current deployment. For full functionality, download the Docker image from [here](#).
+Due to heavy data usage and costs, the deployment is not serverless. Therefore, the streaming feature doesn't work in the current deployment. For full functionality, download the Docker image from [here](https://hub.docker.com/r/adityatakharya/flexio).
 
 <br/>
 
@@ -71,7 +71,7 @@ After completing all the steps, your app will start running as soon as the docke
 
 - Created a Docker container to streamline deployment. (FFmpeg should be installed on the machine to work properly and that's why, docker was the right option)
 - Imported spawn for child_process in Node.js.
-- Configured a Docker container with Ubuntu, CURL, Node.js, and FFmpeg for video processing. (Refer to [Dockerfile](https://github.com/adityatakharya/flexio/blob/main/Dockerfile ) for more.)
+- Configured a Docker container with Ubuntu, CURL, Node.js, and FFmpeg for video processing. (Refer to [Dockerfile](https://github.com/adityatakharya/flexio/blob/main/Dockerfile) for more.)
 - Defined the ports. (Refer to [docker-compose](https://github.com/adityatakharya/flexio/blob/main/docker-compose.yml) for more.)
 - Ran the server using docker-compose up
 
