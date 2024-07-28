@@ -2341,3 +2341,23 @@
 {"level":"error","message":"ffmpeg stderr: frame= 2408 fps= 26 q=25.0 size=   20902kB time=00:01:36.44 bitrate=1775.3kbits/s dup=0 drop=481 speed=1.03x    \r","service":"user-service"}
 {"level":"error","message":"ffmpeg stderr: frame= 2420 fps= 26 q=24.0 size=   21013kB time=00:01:36.99 bitrate=1774.7kbits/s dup=0 drop=484 speed=1.03x    \r","service":"user-service"}
 {"level":"error","message":"ffmpeg stderr: frame= 2433 fps= 26 q=24.0 size=   21126kB time=00:01:37.53 bitrate=1774.3kbits/s dup=0 drop=486 speed=1.03x    \r","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}

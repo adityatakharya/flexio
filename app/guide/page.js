@@ -49,7 +49,7 @@ const Timeline = () => {
           </div>
           <div className="relative p-4 my-6 text-gray-300 bg-gray-900 rounded-xl col-start-6 col-end-10 mr-auto">
             <h3 className="text-lg font-semibold lg:text-xl">Open <span className="text-red-400">Youtube Studio</span></h3>
-            <p className="mt-2 leading-6">Access your YouTube Studio dashboard by click on your profile icon.</p>
+            <p className="mt-2 leading-6">Access your YouTube Studio dashboard by clicking on your profile icon.</p>
           </div>
         </motion.div>
 
@@ -122,7 +122,7 @@ const Timeline = () => {
           </div>
           <div className="relative p-4 my-6 text-gray-300 bg-gray-900 rounded-xl col-start-6 col-end-10 mr-auto">
             <h3 className="text-lg font-semibold lg:text-xl"><u className="underline-offset-4">Paste</u> and Enjoy Streaming.</h3>
-            <p className="mt-2 leading-6">Paste the required credentials and press Set Key. Once done, go back to the homepage by click the logo and press the Start Streaming button.</p>
+            <p className="mt-2 leading-6">Paste the required credentials and press Set Key. Once done, go back to the homepage by clicking the logo and press the Start Streaming button.</p>
           </div>
         </motion.div>
       </div>

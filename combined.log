@@ -1,0 +1,73 @@
+{"level":"info","message":"> Ready on http://bee4101202b9:3000","service":"user-service"}
+{"level":"info","message":"> Ready on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"> Ready on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"> Ready on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"info","message":"Socket Disconnected","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"Socket Connected","service":"user-service"}
+{"level":"error","message":"No stream key provided. Closing socket connection.","service":"user-service"}
+{"level":"info","message":"> Ready on http://bee4101202b9:3000","service":"user-service"}

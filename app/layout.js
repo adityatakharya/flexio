@@ -14,10 +14,12 @@ export const metadata = {
 
 const checkIfUserIsLoggedIn = async () => {
   const { data: { user } } = await supabase.auth.getUser();
+  console.log("user1", user);
   return user;
 }
 
-const user = await checkIfUserIsLoggedIn();
+const user = checkIfUserIsLoggedIn();
+console.log("user", user);
 
 export default function RootLayout({ children }) {
   return (
