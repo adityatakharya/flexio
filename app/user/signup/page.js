@@ -115,6 +115,9 @@ const LoginForm = () => {
               >
                 Sign Up
               </button>
+              <div className="text-xs text-gray-500 mt-3 hover:text-gray-400">
+              <a href="/guide"><span><u>Having any trouble?</u></span></a>
+              </div>
             </div>
 
             {/* Log In */}
